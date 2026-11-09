@@ -2,10 +2,18 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyectos</title>
-    <link rel="stylesheet" href="css/global.css">
+    <meta property="og:type" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <title>Contacame</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="icon" type="../assets/images/flores1.png" href="../assets/images/flores1.png">
 
 </head>
 
@@ -13,7 +21,7 @@
 
     <header class="nav">
         <div class="nav__brand">
-            <img src="assets/images/flores1.png" alt="Logo" class="nav__icon">
+            <img src="../assets/images/flores1.png" alt="Logo" class="nav__icon">
             <span class="nav__logo-text">MYPORFOLIOUX/UI</span>
         </div>
         <nav>
@@ -31,13 +39,48 @@
                     <a href="tecnologia.html" class="nav__link">TECNOLOGÍAS</a>
                 </li>
                 <li class="nav__item">
-                    <a href="contacto.html" class="nav__link">CONTACTO</a>
+                    <a href="contacto.html" class="nav__link nav__link--activo">CONTACTO</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <main>
 
+    <main class="contact">
+        <section class="card">
+            <div class="contact-card__div">
+                <h1 class="contact-card__title">CONTÁCTAME</h1>
+            </div>
+
+            <form class="contact-form">
+                <div class="contact-form__group">
+                    <label for="email" class="contact-form__label">&lt;CORREO ELECTRÓNICO&gt;</label>
+                    <input type="email" id="email" name="email" class="contact-form__input" />
+                </div>
+
+                <div class="contact-form__group">
+                    <label for="subject" class="contact-form__label">&lt;ASUNTO&gt;</label>
+                    <input type="text" id="subject" name="subject" class="contact-form__input" />
+                </div>
+
+                <div class="contact-form__group">
+                    <label for="message" class="contact-form__label">&lt;MENSAJE&gt;</label>
+                    <textarea id="message" name="message" class="contact-form__textarea"></textarea>
+                </div>
+
+                <div class="contact-form__actions">
+                    <button class="contact-form__button">Enviar</button>
+                </div>
+            </form>
+        </section>
+
+        <aside class="contact-map">
+            <div class="contact-map__wrapper">
+                <iframe class="contact-map__iframe"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.8925970935047!2d-5.991180088453406!3d37.39237217196825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126c035971c2ab%3A0xeda713319b218290!2sC.%20Ni%C3%B1o%20Ricardo%2C%20Casco%20Antiguo%2C%2041003%20Sevilla!5e0!3m2!1ses-419!2ses!4v1794151952965!5m2!1ses-419!2ses"
+                    title="Mapa de ubicación en Sevilla" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </aside>
     </main>
 
     <footer class="footer__papa">
@@ -45,15 +88,15 @@
         <div class="footer__div">
 
             <a href="https://www.instagram.com/magre.moth/" target="_blank" rel="noopener noreferrer">
-                <img src="assets/images/instagram.png" alt="instagram" class="icon-link">
+                <img src="../assets/images/instagram.png" alt="instagram" class="icon-link">
             </a>
 
             <a href="https://www.linkedin.com/in/magreyt/" target="_blank" rel="noopener noreferrer">
-                <img src="assets/images/linkedin.png" alt="linkedin" class="icon-link">
+                <img src="../assets/images/linkedin.png" alt="linkedin" class="icon-link">
             </a>
 
             <a href="https://www.behance.net/magreytousaintte" target="_blank" rel="noopener noreferrer">
-                <img src="assets/images/behance.png" alt="behance" class="icon-link">
+                <img src="../assets/images/behance.png" alt="behance" class="icon-link">
             </a>
 
         </div>
