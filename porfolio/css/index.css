@@ -1,5 +1,7 @@
 /* index html */
 
+/* aqui empiezan las flores (que tendran alguna animacion con java) */
+
 .portfolio__container {
     position: relative;
     overflow: hidden;
@@ -7,8 +9,6 @@
     display: flex;
     flex-direction: column;
 }
-
-/* aqui empiezan las flores (que tendran alguna animacion con java) */
 
 .flores-fondo {
     position: absolute;
@@ -83,13 +83,13 @@ main,
     color: #000;
     letter-spacing: 0.25em;
     margin-bottom: 0.6rem;
-    font-family: 'source code pro', monospace;
+    font-family: var(--font-secundaria);
 }
 
 .subtitle {
     font-size: 0.72rem;
     font-weight: 300;
-    color: #000;
+    color: var(--color-letras);
     letter-spacing: 0.08em;
     line-height: 1.5;
     max-width: 550px;
@@ -152,7 +152,7 @@ main,
 .about__card {
     flex: 2 1 min(100%, 320px);
     max-width: 580px;
-    border: 3px solid #382C4A;
+    border: 3px solid var(--color-border);
     border-radius: clamp(24px, 4vw, 42px);
     padding: clamp(20px, 4vw, 38px) clamp(18px, 3.5vw, 35px);
     display: flex;
@@ -163,7 +163,7 @@ main,
     font-size: clamp(12.5px, 1.2vw, 14px);
     line-height: 1.65;
     letter-spacing: 0.06em;
-    color: #1a1523;
+    color: var(--color-letras);
     margin: 0;
     text-align: justify;
 }
@@ -171,14 +171,14 @@ main,
 /* aqui empieza tecnologia */
 
 .title {
-    color: #121015;
+    color: var(--color-letras);
     font-size: clamp(1.75rem, 4vw, 2.5rem);
     font-weight: 800;
     letter-spacing: clamp(0.15em, 0.4vw, 0.35em);
     text-transform: uppercase;
     margin: 0 0 clamp(2rem, 2vw, 3.5rem);
     text-align: center;
-    font-family: 'source code pro', monospace;
+    font-family: var(--font-secundaria);
 }
 
 .technologies__grid {
@@ -211,25 +211,25 @@ main,
 .card__name {
     font-size: clamp(0.85rem, 1.2vw, 1rem);
     font-weight: 800;
-    color: #000;
+    color: var(--color-letras);
     letter-spacing: 0.15em;
     margin: 0;
     text-transform: uppercase;
     text-align: center;
-    font-family: 'source code pro', monospace;
+    font-family: var(--font-secundaria);
 }
 
 .card__badge {
     width: 100%;
     aspect-ratio: 1 / 1;
-    background-color: #E3C6F3;
+    background-color: var(--color-card);
     border-radius: clamp(1.5rem, 20%, 2.2rem);
     display: flex;
     align-items: center;
     justify-content: center;
     padding: clamp(1rem, 12%, 1.5rem);
     box-sizing: border-box;
-    box-shadow: 0 10px 20px -8px rgba(110, 80, 140, 0.15);
+    box-shadow: 0 10px 20px -8px var(--color-sombra-cad);
 }
 
 .card__image {
@@ -247,11 +247,11 @@ main,
 }
 
 .tech-card__star--filled {
-    color: #382C4A;
+    color: var(--color-button-nav);
 }
 
 .tech-card__star--empty {
-    color: #E3C6F3;
+    color: var(--color-card);
 }
 
 /* aqui empieza contacto */
@@ -276,7 +276,7 @@ main,
 }
 
 .card {
-  border: 3px solid #382C4A;
+  border: 3px solid var(--color-border);
   border-radius: clamp(20px, 3vw, 32px);
   padding: clamp(1.5rem, 3vw, 2.5rem);
   background-color: transparent;
@@ -293,7 +293,7 @@ main,
   letter-spacing: clamp(0.12em, 0.8vw, 0.22em);
   font-weight: 700;
   line-height: 1.25;
-  color: #2f2a3d;
+  color: var(--color-letras);
   text-align: center;
   max-width: 100%;
   overflow-wrap: break-word;
@@ -315,7 +315,7 @@ main,
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.05em;
-  color: #795191;
+  color: var(--color-button-hover);
   max-width: 100%;
   overflow-wrap: break-word;
 }
@@ -323,12 +323,12 @@ main,
 .contact-form__input,
 .contact-form__textarea {
   width: 100%;
-  border: 1.5px solid #000000;
+  border: 1.5px solid var(--color-border);
   border-radius: 12px;
   padding: 0.65rem 0.85rem;
   font-family: inherit;
   font-size: 0.95rem;
-  color: #382C4A;
+  color: var(--color-card);
   outline: none;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
   background-color: transparent;
@@ -337,7 +337,7 @@ main,
 
 .contact-form__input:focus,
 .contact-form__textarea:focus {
-  border-color: #8b6baf;
+  border-color: var(--color-border-focus);
 }
 
 .contact-form__actions {
@@ -348,7 +348,7 @@ main,
 
 .contact-form__button {
   width: min(100%, 200px);
-  border: 3px solid #382C4A;
+  border: 3px solid var(--color-border);
   border-radius: 10px;
   padding: 0.5rem 1.75rem;
   font-family: inherit;
@@ -362,8 +362,8 @@ main,
 }
 
 .contact-form__button:hover {
-  background-color: #795191;
-  color: #ffffff;
+  background-color: var(--color-button-hover);
+  color: var(--color-letras-button);
 }
 
 .contact-map {

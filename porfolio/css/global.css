@@ -1,14 +1,32 @@
+:root {
+    /* paleta de colores */
+    --color-fondo: #F0EFFD;
+    --color-button-nav: #382C4A;
+    --color-nav-title-hover: #795191;
+    --color-letras: #000;
+    --color-letras-button: #fff;
+    --color-border: #2e263d;
+    --color-card: #E3C6F3;
+    --color-sombra-cad: #d7c0ed;
+    --color-border-focus: #8b6baf;
+    --color-button-hover: #795191;
+
+    /* Tipografías */
+    --font-primaria: 'comic neue', cursive, sans-serif;
+    --font-secundaria: 'source code pro', monospace;
+  }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     outline: 0;
-    font-family: 'comic neue', cursive, sans-serif;
+    font-family: var(--font-primaria);
 }
 
 body {
-    background-color: #F0EFFD;
-    color: #000000;
+    background-color: var(--color-fondo);
+    color: var(--color-letras);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -53,7 +71,7 @@ main {
 .nav__logo-text {
     font-size: clamp(0.75rem, 2vw, 0.9rem);
     font-weight: 700;
-    color: #795191;
+    color: var(--color-button-hover);
     letter-spacing: 0.10em;
 }
 
@@ -67,8 +85,8 @@ main {
 
 .nav__link {
     display: inline-block;
-    background-color: #382C4A;
-    color: #fff;
+    background-color: var(--color-button-nav);
+    color: var(--color-letras-button);
     text-decoration: none;
     font-size: clamp(0.65rem, 1.5vw, 0.75rem);
     font-weight: 700;
@@ -84,7 +102,7 @@ main {
 }
 
 .nav__link--activo {
-    background-color: #795191;
+    background-color: var(--color-button-hover);
 }
 
 /* aqui empieza el footer */
@@ -97,16 +115,16 @@ main {
     gap: 1rem;
     width: min(92%, 650px);
     margin: 15px auto;
-    border: 3px solid #2e263d;
+    border: 3px solid var(--color-border);
     border-radius: 9999px;
     padding: 0.5rem clamp(1rem, 4vw, 3.8rem);
-    background-color: #F0EFFD;
+    background-color: var(--color-fondo);
 }
 
 .footer__title {
     font-size: clamp(0.75rem, 2vw, 0.85rem);
     font-weight: 700;
-    color: #000;
+    color: var(--color-letras);
     letter-spacing: 0.12em;
     text-transform: uppercase;
     text-align: center;
