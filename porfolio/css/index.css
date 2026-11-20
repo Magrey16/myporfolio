@@ -83,7 +83,7 @@ main,
   color: #000;
   letter-spacing: 0.25em;
   margin-bottom: 0.6rem;
-  font-family: var(--font-secundaria);
+  font-family: var(--font-secundaria)
 }
 
 .subtitle {
@@ -104,8 +104,7 @@ main,
 .escritorio__image {
   width: 100%;
   height: auto;
-  display: block;
-  border: 5px double #E3C6F3;
+    display: block;
 }
 
 /* aqui empieza proyecto */
